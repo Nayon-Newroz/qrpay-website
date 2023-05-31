@@ -1,0 +1,329 @@
+.title_large {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #25316d;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.title_large2 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #25316d;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.title_semibold_medium {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #25316d;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 46px;
+}
+.title_semibold_small {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #25316d;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+.subtitle_bold {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #25316d;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+.text_body_medium {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #303030;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+.text_body_small_regular {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #303030;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.text_body_xs_regular {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #303030;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.card_holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 30px;
+  margin: 60px 0;
+  flex-wrap: wrap;
+}
+
+/* .card_holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  padding: 0px;
+  gap: 30px;
+  margin: 60px 0;
+  flex-wrap: wrap;
+} */
+.circle_img_holder {
+  width: 114px;
+  height: 114px;
+  background: #ffffff;
+  border-radius: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.square_img_holder {
+  width: 104px;
+  height: 104px;
+  background: #cfe3ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+}
+.card2 {
+  background: #e2eeff;
+  flex: 0 0 calc(25% - 30px);
+  padding: 24px 20px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .card2 {
+  background: #e2eeff;
+  flex-basis: 23%;
+  padding: 24px 20px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin: auto;
+} */
+.card3 {
+  background: #e2eeff;
+  flex-basis: 48%;
+  padding: 24px 20px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  /* align-items: center; */
+  position: relative;
+  gap: 20px;
+}
+.card3_left {
+  flex: 2;
+}
+.card3_right {
+  flex: 10;
+}
+.card_text_box {
+  /* margin-bottom: 44px; */
+}
+.App {
+  text-align: center;
+}
+
+.card1 {
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(37, 49, 109, 0.1);
+  border-radius: 32px;
+  /* margin: 128px 0; */
+  padding: 32px;
+
+  /* background image */
+  background-image: url("../public/images/logo-icon.svg");
+  /* background-image:  url("/images/logo-icon.svg"); */
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
+.card4 {
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(37, 49, 109, 0.1);
+  border-radius: 32px;
+  /* margin: 128px 0; */
+  padding: 32px;
+  /* min-height: 420px; */
+  box-sizing: border-box;
+
+  /* background image */
+  background-image: url("../public/images/Boy.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 380px;
+}
+.outlined_buttton {
+  padding: 10px 24px !important;
+  border: 2px solid #cb2027 !important;
+  border-radius: 30px !important;
+  font-size: 16px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  /* margin-top: 40px !important; */
+}
+.contained_buttton {
+  padding: 10px 24px !important;
+  border-radius: 30px !important;
+  font-size: 16px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+.contained_buttton_square {
+  padding: 10px 24px !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+.buttton_small2 {
+  padding: 8px 16px !important;
+  background: #ffffff !important;
+  border-radius: 30px !important;
+  font-size: 12px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  border: none !important;
+}
+
+.arrow_style {
+  position: absolute;
+  left: 50%;
+  bottom: -27px;
+  z-index: 100;
+}
+
+.message_box {
+  padding: 60px 40px;
+  box-sizing: border-box;
+  background: #e2eeff;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 26px 10px rgba(124, 124, 124, 0.06);
+  border-radius: 32px;
+}
+.input_style input {
+  padding: 16.5px 42px 15.5px 16px !important;
+  background: #ffffff !important;
+  border-radius: 8px !important;
+  letter-spacing: 0.32px !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #686868 !important;
+}
+.textarea_style .MuiOutlinedInput-root {
+  padding: 16.5px 42px 15.5px 16px !important;
+  background: #ffffff !important;
+  border-radius: 8px !important;
+  letter-spacing: 0.32px !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #686868 !important;
+}
+.section_style {
+  margin: 150px 0px !important;
+}
+.left_image_style {
+  width: 80%;
+  display: block;
+}
+.right_image_style {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+}
+.center {
+  text-align: center !important;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt25 {
+  margin-top: 25px !important;
+}
+.mt40 {
+  margin-top: 40px !important;
+}
+.mt50 {
+  margin-top: 50px !important;
+}
+.mb6 {
+  margin-bottom: 6px;
+}
+.mb12 {
+  margin-bottom: 12px;
+}
+.mb24 {
+  margin-bottom: 24px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

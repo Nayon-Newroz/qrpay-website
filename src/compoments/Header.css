@@ -1,0 +1,23 @@
+.nav_item {
+  color: #303030 !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  text-transform: none !important;
+  /* margin-right: 28px !important; */
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+  border: 2px solid rgba(0, 0, 0, 0) !important;
+  border-radius: 0px !important;
+}
+.nav_item2 {
+  color: #303030 !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  text-transform: none !important;
+  /* margin-right: 28px !important; */
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+}
+.active {
+  border-bottom: 2px solid #25316d !important;
+}
