@@ -20,6 +20,7 @@ const Home = () => {
           alignItems="center"
           style={{
             height: "calc(100vh - 65px)",
+            maxHeight: "1000px",
           }}
         >
           <Grid item xs={5}>
@@ -51,6 +52,7 @@ const Home = () => {
               alt=""
               style={{
                 height: "calc(100vh - 65px)",
+                maxHeight: "1000px",
                 display: "block",
                 margin: "auto",
               }}
