@@ -3,10 +3,14 @@ import "./Footer.css";
 import { Container, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import MySlider from "./MySlider";
+import MessageForm from "./MessageForm";
 
 const Footer = () => {
   return (
     <>
+      <Container maxWidth="lg">
+        <MessageForm />
+      </Container>
       <MySlider />
       <div style={{ background: "#E2EEFF" }}>
         <Container maxWidth="lg" style={{ padding: "56px 24px" }}>

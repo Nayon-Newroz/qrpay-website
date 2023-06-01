@@ -5,7 +5,14 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Footer from "./compoments/Footer";
 import Navigation from "./pages/Navigation";
 import Test from "./Test";
-
+import { TabScrollButton } from "@mui/material";
+import Zoom from "@mui/material/Zoom";
+import Box from "@mui/material/Box";
+import Switch from "@mui/material/Switch";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import { Fab } from "@mui/material";
+import VerticalAlignTopIcon from "@mui/icons-material/VerticalAlignTop";
+import { useEffect } from "react";
 const theme = createTheme({
   typography: {
     // allVariants: {
@@ -97,7 +104,73 @@ const theme = createTheme({
   // },
 });
 
-function App() {
+function ScrollTop(props) {
+  const { children, window } = props;
+  console.log("window", window);
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  };
+  return (
+    <Zoom in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: "fixed", bottom: 16, right: 16 }}
+      >
+        {children}
+      </Box>
+    </Zoom>
+  );
+}
+
+function App(props) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const divPosition = document.getElementById("header");
+      // console.log("Div position:", divPosition);
+      // Perform any desired logic based on the div's position
+      let x = divPosition.offsetLeft;
+      let y = divPosition.offsetTop;
+
+      console.log("Element X: " + x);
+      console.log("Element Y: " + y);
+      if (y > 200) {
+        divPosition.style.backgroundColor = "#cfe3ff";
+      } else {
+        divPosition.style.backgroundColor = "";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -114,6 +187,16 @@ function App() {
 
           <Navigation />
           <Footer />
+          <ScrollTop {...props}>
+            <Fab
+              // color="primary"
+              size="small"
+              style={{ background: "#fff" }}
+              aria-label="scroll back to top"
+            >
+              <VerticalAlignTopIcon onClick={scrollToTop} color="#25316" />
+            </Fab>
+          </ScrollTop>
           {/* <div className="App">
 
       <header className="App-header">

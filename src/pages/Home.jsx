@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import { Button, Container, Grid, TextField } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import MessageForm from "../compoments/MessageForm";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div>
       <Container maxWidth="xl">
@@ -27,7 +34,15 @@ const Home = () => {
             </p>
           </Grid>
           <Grid item xs={6}>
-            <img src="/images/home-bg.png" alt="" width="100%" />
+            <img
+              src="/images/home-bg.png"
+              alt=""
+              style={{
+                height: "calc(100vh - 65px)",
+                display: "block",
+                margin: "auto",
+              }}
+            />
             {/* <div style={{ position: "relative", maxWidth: "100%" }}>
               <img src="/images/home-circle.svg" alt="" width="100%" />
               <img
@@ -144,7 +159,9 @@ const Home = () => {
           </p>
           <div className="card_holder">
             <div className="card2">
-              <div>
+              <div class="triangle_left"></div>
+              <div class="triangle_right"></div>
+              <div className="card2_content">
                 <div className="circle_img_holder">
                   <img src="/images/Wallet.svg" alt="" />
                 </div>
@@ -169,7 +186,9 @@ const Home = () => {
               </div>
             </div>
             <div className="card2">
-              <div>
+              <div class="triangle_left"></div>
+              <div class="triangle_right"></div>
+              <div className="card2_content">
                 <div className="circle_img_holder">
                   <img src="/images/Wallet-manage.svg" alt="" />
                 </div>
@@ -194,7 +213,9 @@ const Home = () => {
               </div>
             </div>
             <div className="card2">
-              <div>
+              <div class="triangle_left"></div>
+              <div class="triangle_right"></div>
+              <div className="card2_content">
                 <div className="circle_img_holder">
                   <img src="/images/Wallet-Mobile.svg" alt="" />
                 </div>
@@ -219,7 +240,9 @@ const Home = () => {
               </div>
             </div>
             <div className="card2">
-              <div>
+              <div class="triangle_left"></div>
+              <div class="triangle_right"></div>
+              <div className="card2_content">
                 <div className="circle_img_holder">
                   <img src="/images/Verification.svg" alt="" />
                 </div>
@@ -311,7 +334,7 @@ const Home = () => {
             innovation.
           </p>
           <div className="card_holder">
-            <div className="card3">
+            <div className="card3 card_shadow">
               <div className="card3_left">
                 <div className="square_img_holder">
                   <img src="/images/Launch.svg" alt="" />
@@ -329,7 +352,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="card3">
+            <div className="card3 card_shadow">
               <div className="card3_left">
                 <div className="square_img_holder">
                   <img src="/images/Pazzel.svg" alt="" />
@@ -346,7 +369,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="card3">
+            <div className="card3 card_shadow">
               <div className="card3_left">
                 <div className="square_img_holder">
                   <img src="/images/Flexible.svg" alt="" />
@@ -360,7 +383,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="card3">
+            <div className="card3 card_shadow">
               <div className="card3_left">
                 <div className="square_img_holder">
                   <img src="/images/api.svg" alt="" />
@@ -467,7 +490,7 @@ const Home = () => {
               <img src="/images/Flow.svg" alt="" className="left_image_style" />
             </Grid>
             <Grid item xs={6}>
-              <div className="card3 mb24">
+              <div className="card3 card_shadow mb24">
                 <img src="/images/arrow.svg" alt="" className="arrow_style" />
                 <div className="card3_left">
                   <div className="square_img_holder">
@@ -481,7 +504,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="card3 mb24">
+              <div className="card3 card_shadow mb24">
                 <img src="/images/arrow.svg" alt="" className="arrow_style" />
                 <div className="card3_left">
                   <div className="square_img_holder">
@@ -496,7 +519,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="card3 mb24">
+              <div className="card3 card_shadow mb24">
                 <div className="card3_left">
                   <div className="square_img_holder">
                     <img src="/images/Launch.svg" alt="" />
@@ -522,7 +545,7 @@ const Home = () => {
             </Grid>
           </Grid>
         </div>
-        <MessageForm />
+        {/* <MessageForm /> */}
       </Container>
     </div>
   );
