@@ -490,7 +490,10 @@ const Home = () => {
               <img src="/images/Flow.svg" alt="" className="left_image_style" />
             </Grid>
             <Grid item xs={6}>
-              <div className="card3 card_shadow mb24">
+              <div
+                className="card3 card_shadow mb24"
+                style={{ alignItems: "center" }}
+              >
                 <img src="/images/arrow.svg" alt="" className="arrow_style" />
                 <div className="card3_left">
                   <div className="square_img_holder">
@@ -504,7 +507,10 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="card3 card_shadow mb24">
+              <div
+                className="card3 card_shadow mb24"
+                style={{ alignItems: "center" }}
+              >
                 <img src="/images/arrow.svg" alt="" className="arrow_style" />
                 <div className="card3_left">
                   <div className="square_img_holder">
@@ -519,7 +525,10 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="card3 card_shadow mb24">
+              <div
+                className="card3 card_shadow mb24"
+                style={{ alignItems: "center" }}
+              >
                 <div className="card3_left">
                   <div className="square_img_holder">
                     <img src="/images/Launch.svg" alt="" />
