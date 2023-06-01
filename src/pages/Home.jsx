@@ -18,22 +18,34 @@ const Home = () => {
         <Grid
           container
           alignItems="center"
-          style={{ height: "calc(100vh - 65px)" }}
+          style={{
+            height: "calc(100vh - 65px)",
+          }}
         >
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <p className="title_large mb24">
               Build a powerful,
               <br /> white-label <br />
               <span style={{ color: "#CB2027" }}>payments platform</span>.
             </p>
 
-            <p className="text_body_medium" style={{ maxWidth: "500px" }}>
+            <p className="text_body_medium mb24" style={{ maxWidth: "500px" }}>
               Our API-driven SaaS platform is a revolutionary way to build
               digital banking and payment products quickly, without hefty
               upfront investments, saving time and accelerating release.
             </p>
+
+            <Button
+              variant="contained"
+              color="error"
+              endIcon={<ArrowForwardIcon />}
+              className="contained_buttton"
+              disableElevation
+            >
+              Get a cot code
+            </Button>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={7}>
             <img
               src="/images/home-bg.png"
               alt=""
@@ -55,6 +67,7 @@ const Home = () => {
           </Grid>
         </Grid>
       </Container>
+      <div style={{ height: "1px", background: "#fff" }}></div>
       <Container maxWidth="lg">
         <div className="card1 section_style">
           <Grid container alignItems="center">
@@ -284,7 +297,7 @@ const Home = () => {
               className="contained_buttton"
               disableElevation
             >
-              Add Product's
+              All Product’s
             </Button>
           </div>
         </div>

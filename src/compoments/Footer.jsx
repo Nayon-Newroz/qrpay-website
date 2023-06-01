@@ -73,8 +73,8 @@ const Footer = () => {
                   <img src="/images/phone.svg" alt="" />
                 </Grid>
                 <Grid item xs={10}>
-                  <p className="footer_item">(880)16854295515</p>
-                  <p className="footer_item">(880)16854295515</p>
+                  <p className="footer_item">(880)16XXXXXXXX</p>
+                  <p className="footer_item">(880)16XXXXXXXX</p>
                 </Grid>
               </Grid>
               <Grid container>
